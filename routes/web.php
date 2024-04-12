@@ -24,4 +24,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('usermanagement', [userRegistrationPostController::class, 'index']);
 Route::post('user-registration-store-form', [userRegistrationPostController::class, 'store']);
 
+Route::get('/usermanagement/{id}/edit', [userRegistrationPostController::class, 'edit']);
+// Route::get('/items/{id}/edit', 'ItemController@edit');
+Route::put('/edit/{id}', [userRegistrationPostController::class, 'update']);
+// Route::put('/usermanagement/{id}', 'ItemController@update');
 
+Route::get('/usermanagement/delete/{id}', [userRegistrationPostController::class, 'delete']);

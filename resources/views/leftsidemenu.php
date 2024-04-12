@@ -1,12 +1,4 @@
 
-
-
-
-
-
-
-
-
     <img src="https://aashonline.com/wp-content/uploads/2023/09/Aash-White.png" alt="Aashonline company logo" class="bg-black p-8 rounded-full" />
     <p class="text-xl font-serif text-gray-600">Aashonline</p>
 
