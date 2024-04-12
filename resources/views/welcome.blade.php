@@ -1,0 +1,4 @@
+@include('fullpage')
+
+</body>
+</html>
