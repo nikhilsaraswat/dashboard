@@ -13,7 +13,7 @@
     <body>
     
 <!-- created a logic to render lock screen and open screen -->
-@if (1==1)
+@if (1==2)
   @include('lockscreen')
 @else
   @include('openscreen')

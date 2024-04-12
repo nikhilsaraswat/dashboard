@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\userRegistrationPostController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -19,3 +20,8 @@ Route::get('/invoicemanagement', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('usermanagement', [userRegistrationPostController::class, 'index']);
+Route::post('user-registration-store-form', [userRegistrationPostController::class, 'store']);
+
+
